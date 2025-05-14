@@ -1,0 +1,26 @@
+2025-05-14 15:44:03,322 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 15:46:04,278 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 15:47:38,220 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 15:47:38,232 : INFO : __init__ : Entering product name: HP
+2025-05-14 15:47:41,318 : INFO : __init__ : Clicking the search button
+2025-05-14 15:47:41,821 : INFO : <module> : Product display status: True
+2025-05-14 15:57:32,727 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 15:57:32,737 : INFO : __init__ : Entering product name: HP
+2025-05-14 15:57:33,122 : INFO : __init__ : Clicking the search button
+2025-05-14 15:57:33,626 : INFO : <module> : Product display status: True
+2025-05-14 16:05:17,849 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 16:05:17,863 : INFO : __init__ : Entering product name: HP
+2025-05-14 16:05:18,294 : INFO : __init__ : Clicking the search button
+2025-05-14 16:05:18,764 : INFO : <module> : Product display status: True
+2025-05-14 16:08:39,339 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 16:08:39,347 : INFO : __init__ : Entering product name: HP
+2025-05-14 16:08:39,718 : INFO : __init__ : Clicking the search button
+2025-05-14 16:08:40,100 : INFO : <module> : Product display status: True
+2025-05-14 16:14:31,159 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 16:14:31,171 : INFO : __init__ : Entering product name: HP
+2025-05-14 16:14:31,597 : INFO : __init__ : Clicking the search button
+2025-05-14 16:14:31,998 : INFO : <module> : Product display status: True
+2025-05-14 16:27:06,277 : INFO : <module> : Test started: test_search_for_valid_product
+2025-05-14 16:27:06,283 : INFO : __init__ : Entering product name: HP
+2025-05-14 16:27:06,516 : INFO : __init__ : Clicking the search button
+2025-05-14 16:27:06,857 : INFO : <module> : Product display status: True
