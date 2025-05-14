@@ -22,6 +22,46 @@ class TestHome:
         except AssertionError:
             self.logger.error("Login is not successful")
             raise
+
+    @pytest.mark.parametrize("username,password", login_data[1:])
+    def test_invalid_user_login(self, username, password):
+        home_page = HomePage(self.driver)
+        home_page.enter_user_credentials_in_login(username, password)
+        
+        if((username!="Admin" and username!="" )or (password!="admin123" and password!="")):
+            try:
+                assert home_page.is_invalid_credentials_displayed() is True 
+                self.logger.info("Login failed")
+            except AssertionError:
+                self.logger.error("login success for invalid credentials")
+                raise
+
+        elif (username=="" and password==""):
+            try:
+                both_field_req=home_page.is_username_required_displayed() and home_page.is_password_required_displayed()
+                assert both_field_req is True 
+                self.logger.info("Login failed")
+            except AssertionError:
+                self.logger.error("login success for invalid credentials")
+                raise
+        
+        elif username=="":
+            try:
+                assert home_page.is_username_required_displayed() is True 
+                self.logger.info("Login failed")
+            except AssertionError:
+                self.logger.error("login success for invalid credentials")
+                raise
+        
+        # elif password=="" :
+        #     try:
+        #         assert home_page.is_password_required_displayed() is True 
+        #         self.logger.info("Login failed")
+        #     except AssertionError:
+        #         self.logger.error("login success for invalid credentials")
+        #         raise
+
+ 
     
         
 
