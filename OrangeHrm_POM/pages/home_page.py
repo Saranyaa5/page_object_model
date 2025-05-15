@@ -11,8 +11,8 @@ class HomePage(BasePage):
     invalid_login_cred_xpath=(By.XPATH,"//p[contains(@class,'oxd-text oxd-text--p oxd-alert-content-text')]")
     username_required_xpath=(By.XPATH,"(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[1]")
 
-    password_required_xpath=(By.XPATH,"(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[2]")
-
+    # password_required_xpath=(By.XPATH,"(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[2]")
+    password_required_xpath=(By.XPATH,"//*[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/span")
     def __init__(self, driver):
         super().__init__(driver)
 
@@ -35,7 +35,7 @@ class HomePage(BasePage):
            return self.find(self.invalid_login_cred_xpath).is_displayed()
     
     def is_password_required_displayed(self):
-        self.wait_for_element_visible(self.password_required_xpath,10)
+        self.wait_for_element_to_locate(self.password_required_xpath,15)
         return self.find(self.password_required_xpath).is_displayed()
     
     def is_username_required_displayed(self):

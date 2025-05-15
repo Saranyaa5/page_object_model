@@ -30,3 +30,9 @@ class BasePage:
 
     def wait_for_element_clickable(self, by_locator, timeout):
         WebDriverWait(self.driver, timeout).until(EC.element_to_be_clickable(by_locator))
+
+    def wait_for_url_to_load(self,by_locator,timeout):
+        WebDriverWait(self.driver, timeout).until(EC.url_to_be(by_locator))
+
+    def wait_for_element_to_locate(self,by_locator,timeout):
+        WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located(by_locator))
